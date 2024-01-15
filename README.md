@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# SuperText - Text Utility
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to SuperText, a versatile text manipulation utility that provides powerful features for handling text in various ways. Whether you need to convert case, remove extra spaces, or utilize text-to-speech functionality, SuperText has you covered.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Case Conversion
+Easily convert text between uppercase and lowercase, enhancing flexibility in text formatting.
 
-### `npm start`
+### 2. Space Removal
+Efficiently remove extra spaces from your text, ensuring cleaner and more consistent output.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Text-to-Speech
+Transform written text into speech, adding an interactive and accessible element to your content.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Visit the [SuperText website](https://zahid40.github.io/Textunility/) to start using the utility. Simply input your text and choose from the available options to perform the desired operation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Access the SuperText website: [https://zahid40.github.io/Textunility/](https://zahid40.github.io/Textunility/)
+2. Input your text in the provided area.
+3. Select the operation you want to perform (case conversion, space removal, or text-to-speech).
+4. Click the corresponding button to execute the operation.
+5. View the transformed text or listen to the generated speech.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Feedback
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We value your feedback! If you have suggestions, encounter issues, or would like to contribute, please [create an issue](https://github.com/zahid40/Textunility/issues) on our GitHub repository.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+SuperText is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute this utility in accordance with the terms specified in the license.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using SuperText! Simplify your text processing tasks with ease.

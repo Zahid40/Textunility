@@ -65,36 +65,36 @@ export default function Txtform(props) {
         <div className="container text-center">
           <div className="row my-2">
             <div className="col">
-              <button className="btn btn-danger btn-width" onClick={hadleclear}>Clear</button>
+              <button disabled={text.length===0} className="btn btn-danger btn-width" onClick={hadleclear}>Clear</button>
             </div>
             <div className="col">
-              <button className="btn btn-success btn-width" id='Speakbtn' onClick={handlespeakclick}>{speak}</button>
+              <button disabled={text.length===0} className="btn btn-success btn-width" id='Speakbtn' onClick={handlespeakclick}>{speak}</button>
             </div>
             <div className="col">
-              <button className="btn btn-light btn-width" onClick={handlecopy}>Copy</button>
+              <button disabled={text.length===0} className="btn btn-light btn-width" onClick={handlecopy}>Copy</button>
             </div>
           </div>
           <div className="row my-2">
             <div className="col">
-              <button className="btn btn-outline-primary btn-width" onClick={hadleremoveextra}>Remove Extra Spaces</button>
+              <button disabled={text.length===0} className="btn btn-outline-primary btn-width" onClick={hadleremoveextra}>Remove Extra Spaces</button>
             </div>
             <div className="col">
-              <button className="btn btn-outline-primary btn-width" onClick={handleupclick}>Convert to Uppercase</button>
+              <button disabled={text.length===0} className="btn btn-outline-primary btn-width" onClick={handleupclick}>Convert to Uppercase</button>
             </div>
             <div className="col">
-              <button className="btn btn-outline-primary btn-width" onClick={handlelowclick}>Convert to Lowercase</button>
+              <button disabled={text.length===0} className="btn btn-outline-primary btn-width" onClick={handlelowclick}>Convert to Lowercase</button>
             </div>
           </div>
         </div>
         <div className="container">
           <h2 className='p-3 rounded' style={{backgroundColor : props.mode==='light'?'white':'#05141a', color :  props.mode==='light'?'#133337':'#63dcf6'}}>Your Text summary</h2>
-          <p>Words : <strong>{ text.trim()===""?0:text.split(" ").length}</strong></p>
+          <p>Words : <strong>{ text.split(" ").filter((e)=>{return e.length!==0}).length}</strong></p>
           <p>characters : <strong>{text.length}</strong></p>
           <p>Sentence : <strong>{text.trim()===""?0:text.split(".").length}</strong></p>
           <p>Paragraph : <strong>{text.trim()===""?0:text.split("\n\n").length}</strong></p>
 
-          <p><strong>{0.005 * (text.trim()===""?0:text.split(" ").length)}</strong> Minutes To Read</p>
-          <p><strong>{text.length / text.split(" ").length}</strong> Charactors Per Word</p>
+          <p><strong>{0.005 * (text.split(" ").filter((e)=>{return e.length!==0}).length)}</strong> Minutes To Read</p>
+          <p><strong>{text.length / text.split(" ").filter((e)=>{return e.length!==0}).length}</strong> Charactors Per Word</p>
           <h2 className='p-3 rounded' style={{backgroundColor : props.mode==='light'?'white':'#05141a', color :  props.mode==='light'?'#133337':'#63dcf6'}}>Preview</h2>
           <p>{text}</p>
        </div>

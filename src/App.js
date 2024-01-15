@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import About from './components/About';
+// import About from './components/About';
 import Txtform from './components/Txtform';
 import Navbar from './components/navbar';
 import './App.css';
 import Aleart from './components/Aleart';
-import { Route, Routes } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
 
 
 
@@ -45,13 +45,14 @@ function App() {
             <Aleart aleart={aleart} />
           </div>  
         </div>
-      <Routes>
+        <Txtform showalt={showalt} heading="Enter the Text to analyze............" mode={mode} />
+      {/* <Routes>
         
-        <Route path="/" element={<Txtform showalt={showalt} heading="Enter the Text to analyze............" mode={mode} />} />
+        <Route path="/" element={} />
         <Route path="/about" element={<About />} />
 
         
-        </Routes>
+        </Routes> */}
     </>
   );
 }
