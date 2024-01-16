@@ -88,7 +88,7 @@ export default function Txtform(props) {
         </div>
         <div className="container">
           <h2 className='p-3 rounded' style={{backgroundColor : props.mode==='light'?'white':'#05141a', color :  props.mode==='light'?'#133337':'#63dcf6'}}>Your Text summary</h2>
-          <p>Words : <strong>{ text.split(" ").filter((e)=>{return e.length!==0}).length}</strong></p>
+          <p>Words : <strong>{ text.split(/\s+/).filter((e)=>{return e.length!==0}).length}</strong></p>
           <p>characters : <strong>{text.length}</strong></p>
           <p>Sentence : <strong>{text.trim()===""?0:text.split(".").length}</strong></p>
           <p>Paragraph : <strong>{text.trim()===""?0:text.split("\n\n").length}</strong></p>
